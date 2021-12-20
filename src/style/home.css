@@ -82,30 +82,75 @@ header {
 }
 
 .hero {
-     margin-top: 96px;
+    margin-top: 96px;
     height: 792px;
     background-image: url(../img/hero_bg.jpg);
     display: flex;
     justify-content: center;
-  
+
 }
 
-.hero div  {
+.hero div {
     margin-top: 276px;
     width: 923px;
     height: 144px;
-     font-size: 48px;
- font-weight: 400;
- line-height: 150%;
- text-align: center;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 150%;
+    text-align: center;
     color: #FFFFFF;
     display: flex;
-     justify-content: center;
+    justify-content: center;
 }
 
+.info {
+    height: 528px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
+.info-text {
+    width: 1016px;
+    height: 158px;
+    margin-top: 72px;
+    text-align: center;
+    font-size: 24px;
+    line-height: 170%;
+}
 
+.info-context {
+    margin-top: 34px;
+    width: 600px;
+    height: 240px;
+    display: flex;
+    justify-content: space-between;
+}
 
+.info-img {
+    width: 207px;
+}
+
+.info-btn button {
+    margin-top: 72px;
+    width: 339px;
+    height: 72px;
+    font-size: 18px;
+    letter-spacing: 0.15px;
+    display: flex;
+    justify-content: space-around;
+    border: 1px solid #121212;
+    align-items: center;
+    text-align: center;
+    background-color: #FFFFFF;
+}
+
+.info-btn div {
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    background-image: url(../img/keyboard_arrow_right.svg);
+}
 
 
 
@@ -116,7 +161,7 @@ main {
 }
 
 .contacts {
-   
+
     width: 1440px;
     height: 672px;
     position: relative;
