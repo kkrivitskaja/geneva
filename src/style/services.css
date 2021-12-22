@@ -257,15 +257,14 @@ header {
 
 .hero {
     margin-top: 96px;
-    height: 792px;
-    background-image: url(../img/hero_bg.jpg);
+    height: 395px;
+    background-image: url(../img/hero/&_bg.png);
     display: flex;
     justify-content: center;
-
 }
 
+
 .hero div {
-    margin-top: 276px;
     width: 923px;
     height: 144px;
     font-size: 48px;
@@ -273,71 +272,15 @@ header {
     text-align: center;
     color: #FFFFFF;
     display: flex;
-    justify-content: center;
+    align-items: center;
     font-weight: 200;
     letter-spacing: 0.75px;
-}
+    text-align: center;
+    }
 
 .hero span {
     letter-spacing: 0.1px;
     font-weight: 400;
-}
-
-.info {
-    height: 528px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.info-text {
-    width: 1016px;
-    height: 158px;
-    margin-top: 72px;
-    text-align: center;
-    font-size: 24px;
-    line-height: 170%;
-    font-weight: 300;
-    letter-spacing: 0.08px;
-}
-
-.info-context {
-    margin-top: 34px;
-    width: 600px;
-    height: 240px;
-    display: flex;
-    justify-content: space-between;
-}
-
-.info-img {
-    width: 207px;
-}
-
-.info-btn button {
-    margin-top: 72px;
-    width: 339px;
-    height: 72px;
-    font-size: 18px;
-    display: flex;
-    justify-content: space-around;
-    border: 1px solid #121212;
-    align-items: center;
-    text-align: center;
-    background-color: #FFFFFF;
-}
-
-.info-btn div {
-    width: 24px;
-    height: 24px;
-    display: inline-block;
-    background-image: url(../img/keyboard_arrow_right.svg);
-}
-
-
-.propos {
-    height: 1272px;
-    display: flex;
-    flex-direction: column;
 }
 
 .title {
@@ -356,252 +299,12 @@ header {
     z-index: 100;
 }
 
-.text {
-    width: 1120px;
-    height: 325px;
-    margin: 56px 0 47px 108px;
-    font-weight: 200;
-    font-size: 24px;
-    line-height: 150%;
-    letter-spacing: 0.6px;
-    font-style: normal;
-}
-
-.text b {
-    font-family: 'Roboto';
-    letter-spacing: 1.35px;
-}
-
-.propos__video {
-    display: flex;
-    justify-content: center;
-}
-
-.equipe__title {
-    font-weight: 300;
-}
-
-.equipe__context {
-    height: 692px;
-    background: #F7F7F7;
-    display: flex;
-    flex-direction: column;
-}
-
-.equipe__text {
-    margin-top: 0px;
-    padding-top: 68px;
-    height: 144px;
-}
-
-.equipe__column {
-    width: 1224px;
-    height: 432px;
-    display: flex;
-    margin: 0 auto;
-    justify-content: space-between;
-    margin-top: 96px;
-}
-
-.item-equipe {
-    width: 392px;
-    height: 432px;
-    background-color: #FFFFFF;
-    z-index: 10;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.item-equipe__img {
-    margin-top: 44px;
-    height: 200px;
-}
-
-.item-equipe__title {
-    font-style: normal;
-    font-weight: bold;
-    font-size: 24px;
-    line-height: 32px;
-    text-align: center;
-    margin-top: 32px;
-    height: 32px;
-}
-
-.item-equipe__text {
-    text-align: center;
-    color: #597EC7;
-    font-size: 16px;
-    line-height: 150%;
-    margin-top: 16px;
-}
-
-.valeurs {
-    height: 984px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.valeurs__quite {
-    width: 1224px;
-    height: 312px;
-    margin-top: 48px;
-    background: #F7F7F7;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.valeurs__title {
-    font-size: 44px;
-    line-height: 100%;
-    text-align: center;
-    margin-top: 52px;
-    font-weight: 200;
-}
-
-.valeurs__text {
-    font-size: 36px;
-    line-height: 140%;
-    text-align: center;
-    font-weight: 300;
-    margin-top: 32px;
-    font-family: -apple-system,
-        BlinkMacSystemFont,
-        'Segoe UI',
-        Roboto,
-        Oxygen,
-        Ubuntu,
-        Cantarell,
-        'Open Sans',
-        'Helvetica Neue',
-        sans-serif;
-}
-
-.valeurs__element {
-    width: 400px;
-    height: 70px;
-    background: #83A8EF;
-    margin: -35px 108px 0 auto;
-    z-index: 20;
-}
-
-.valeurs__column {
-    width: 1224px;
-    height: 980;
-    margin-top: 61px;
-    display: flex;
-    column-count: 2;
-    -webkit-column-count: 2;
-    -moz-column-count: 2;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-.item-valeurs {
-    width: 600px;
-    height: 216px;
-    display: flex;
-}
-
-.item-valeurs__img {
-    margin-left: 32px;
-    margin-top: 32px;
-}
-
-.valeurs__column>div:nth-last-of-type(-n+2) {
-    margin-top: 48px;
-}
-
-.item-valeurs__title {
-    font-weight: bold;
-    font-size: 44px;
-    line-height: 100%;
-    display: flex;
-    align-items: center;
-    letter-spacing: -1px;
-    margin: 71px 0 0 40px;
-}
-
-.item-valeurs__text {
-    font-size: 18px;
-    line-height: 100%;
-    letter-spacing: -0.25px;
-    margin: 12px 0 0 40px;
-}
-
-.blog {
-    height: 720px;
-    display: flex;
-    flex-direction: column;
-}
-
-
-.contacts__row {
-    display: flex;
-    flex-direction: row;
-    margin: 0 auto;
-    width: 1224px;
-    justify-content: space-between;
-    margin-top: 44px;
-}
-
-.item-blog {
-    width: 392px;
-    height: 360px;
-    background-image: url(../img/blog/blog_img.png);
-    color: #FFFFFF;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.item-blog__context {
-    width: 344px;
-    margin-top: 198px;
-}
-
-.item-blog__date {
-    font-size: 14px;
-    line-height: 18px;
-    letter-spacing: -0.2px;
-}
-
-.item-blog__title {
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 150%;
-
-    letter-spacing: -0.653846px;
-    margin-top: 7px;
-}
-
-.item-blog__btn button {
-    margin-top: 18px;
-    font-size: 14px;
-    line-height: 100%;
-    letter-spacing: 0.15px;
-    background-color: transparent;
-    background: transparent;
-    outline: none;
-    border: none;
-    color: #FFFFFF;
-}
-
-.blog__btn button {
-    outline: none;
-    border: none;
-    margin-top: 32px;
-    margin-left: 1090px;
-    width: 240px;
-}
 
 .contacts {
     width: 1440px;
     height: 672px;
     display: flex;
-    }
+}
 
 .contacts__title {
     position: absolute;
@@ -644,10 +347,7 @@ header {
     border: 1px solid black;
     display: flex;
     align-items: center;
-
 }
-
-
 
 .contact-form__context {
     width: 400px;
@@ -718,8 +418,8 @@ input::placeholder {
     height: 24px;
     display: inline-block;
     background-repeat: no-repeat;
-  
-        background-image: url(../img/contacts/Frame\ 259.svg);
+
+    background-image: url(../img/contacts/Frame\ 259.svg);
 }
 
 footer {
