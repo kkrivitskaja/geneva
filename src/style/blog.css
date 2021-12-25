@@ -1,4 +1,4 @@
-@font-face {
+/* @font-face {
     font-family: 'HelveticaNeueCyr';
     src: url('HelveticaNeueCyr-Medium.eot');
     src: local('HelveticaNeueCyr-Medium'),
@@ -121,7 +121,7 @@ header {
 .main {
     flex: 1 1 auto;
     width: 100%;
-}
+} */
 
 .blog__title {
     margin-top: 81px;
@@ -366,7 +366,7 @@ input::placeholder {
 }
 
 
-footer {
+/* footer {
     min-height: 168px;
     display: flex;
     flex-direction: column;
@@ -382,4 +382,4 @@ footer {
     font-size: 14px;
     text-align: center;
     line-height: 100%;
-}
+} */
