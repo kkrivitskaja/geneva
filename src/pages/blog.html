@@ -38,7 +38,6 @@
                 <div class="title">
                     <p><b>B</b>log</p>
                 </div>
-                <div class="decoration"></div>
             </section>
             <section class="blog__content">
                 <div class="categories-links">
@@ -188,18 +187,22 @@
                 <div class="contact-form">
                     <form action="#" method="post">
 
-                        <input type="email" placeholder="Name" id="name" name="user_mail">
+                        <input type="text" placeholder="Name" class="name" required>
 
-                        <input type="email" placeholder="Email ar.yarmoshuk@gmail.com" id="mail" name="user_mail">
+                        <input type="email" placeholder="Email 
+                        
+                        ar.yarmoshuk@gmail.com" class="mail" required
+                            pattern="^([a-z0-9_-]+\.)*[a-z0-9_-]+@[a-z0-9_-]+(\.[a-z0-9_-]+)*\.[a-z]{2,6}$">
 
-                        <input type="email" placeholder="Sujet" id="mail" name="user_mail">
+                        <input class="text" placeholder="Sujet" class="theme" required>
 
-                        <textarea id="msg" placeholder="Message" name="user_message"></textarea>
-                        <button class="contact-form__btn">
+                        <textarea id="msg" placeholder="Message" required="required"></textarea>
+                        <button type="submit" class="btn">
                             Soumettre
                             <div></div>
                         </button>
                     </form>
+
                 </div>
             </section>
         </main>

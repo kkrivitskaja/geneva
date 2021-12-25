@@ -118,10 +118,136 @@ header {
     gap: 0.6em;
 }
 
-.main {
-    flex: 1 1 auto;
+main {
+    flex: 1 0 auto;
     width: 100%;
-}
+    }
+
+
+
+    .contascts {
+        margin-top: 72px;
+        display: flex;
+    }
+
+    .contacts__title {
+        background-color: #83A8EF;
+        margin-top: 72px;
+        margin-left: -108px;
+        position: relative;
+        display: flex;
+        align-items: center;
+        z-index: 100;
+    }
+
+    .contacts__title {
+        font-size: 44px;
+        line-height: 100%;
+        letter-spacing: 0.15px;
+        font-weight: lighter;
+        padding: 28px 390px 28px 108px;
+    }
+
+    .contacts-info {
+        margin-top: 49px;
+        display: flex;
+        flex-direction: column;
+        gap: 1.4em;
+    }
+
+    .contact-item {
+        font-size: 18px;
+        line-height: 18px;
+        letter-spacing: 0.2px;
+        display: flex;
+        gap: 1em;
+    }
+
+    .contact-form {
+        background-color: var(--clr-bg-third);
+        z-index: -1;
+        padding: 81px 187px 81px 120px;
+        margin-left: -80px;
+        z-index: 30;
+    }
+
+    .contact-form form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    input,
+    textarea {
+        min-height: 44px;
+        width: 200px;
+        background-color: var(--clr-bg-third);
+        border: 1px solid var(--clr-bg-light);
+        font-size: 16px;
+        line-height: 100%;
+        margin-bottom: 28px;
+        align-items: center;
+        box-sizing: border-box;
+        width: 100%;
+    }
+
+    .name {
+        border: 1px solid #33608D;
+    }
+
+    #msg {
+        border: 1px solid #33608D;
+        min-height: 206px;
+        padding-top: 14px;
+    }
+
+    /*word transposition*/
+    input::placeholder {
+        white-space: pre-wrap;
+    }
+
+    /*change placeholder color*/
+    ::-webkit-input-placeholder {
+        color: var(--clr-text-secondary);
+        padding-left: 12px;
+    }
+
+    /*invalid input*/
+    /* input:invalid
+input:required  
+{
+    border: 1px solid red;
+}*/
+
+    .btn {
+        background-color: transparent;
+        background: transparent;
+        outline: none;
+        border: 1px solid var(--clr-bg-light);
+        color: var(--clr-text-secondary);
+        max-width: 156px;
+        font-size: 16px;
+        line-height: 100%;
+        letter-spacing: 0.15px;
+        margin-top: 18px;
+        margin-right: 5px;
+        margin-left: 240px;
+        min-height: 44px;
+        float: right;
+        display: flex;
+        padding: 0 14px 0 16px;
+        align-items: center;
+        justify-content: space-between;
+        cursor: pointer;
+
+    }
+
+    .btn div {
+        padding: 10px 24px 10px 25px;
+        display: inline-block;
+        background-repeat: no-repeat;
+        background-image: url(../img/contacts/Frame\ 259.svg);
+        cursor: pointer;
+    }
 
 footer {
     min-height: 168px;
