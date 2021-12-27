@@ -13,32 +13,50 @@
 <body>
     <div class="main-grid">
         <header>
-            <img src="../img/&_logo.png" alt="Geneva Intelligence" class="logo">
-            <div class="header-wrapper">
-                <nav class="nav">
-                    <a href="../pages/services.html" class="nav__link">Services & Méthodologie</a>
-                    <a href="../pages/blog.html" class="nav__link active">Blog</a>
-                </nav>
-                <div class="social-links">
-                    <a href="" class="social-link" aria-label="Instagram"><img src="../img/Social-i.png" alt="Instagram"
-                            class="social-img"></a>
-                    <a href="" class="social-link" aria-label="Twitter"><img src="../img/Social-tw.png" alt="Twitter"
-                            class="social-img"></a>
-                    <a href="" class="social-link" aria-label="Meta"><img src="../img/Social-f.png" alt="Meta"
-                            class="social-img"></a>
-                    <a href="" class="social-link" aria-label="LinkedIn"><img src="../img/Social-in.png" alt="LinkedIn"
-                            class="social-img"></a>
+            <div class="logo-wrapper">
+                <div class="container" onclick="burger(this)">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+                <script>
+                    function burger(x) {
+                        x.classList.toggle("change");
+                    }
+                </script>
+                <img src="../img/&_logo.png" alt="Geneva Intelligence" class="logo">
+
+                <div class="header-wrapper ">
+                    <nav class="nav">
+                        <a href="../pages/services.html" class="nav__link">Services & Méthodologie</a>
+                        <a href="../pages/blog.html" class="nav__link active">Blog</a>
+                    </nav>
+                    <div class="social-links">
+                        <a href="" class="social-link" aria-label="Instagram"><img src="../img/Social-i.png"
+                                alt="Instagram" class="social-img"></a>
+                        <a href="" class="social-link" aria-label="Twitter"><img src="../img/Social-tw.png"
+                                alt="Twitter" class="social-img"></a>
+                        <a href="" class="social-link" aria-label="Meta"><img src="../img/Social-f.png" alt="Meta"
+                                class="social-img"></a>
+                        <a href="" class="social-link" aria-label="LinkedIn"><img src="../img/Social-in.png"
+                                alt="LinkedIn" class="social-img"></a>
+                    </div>
                 </div>
             </div>
+
+
         </header>
+        <hr>
 
         <main>
             <section class="article__content">
-                <img class="arrow" src="../img/article/&_icon_back.svg" alt="back-arrow">
-                <div class="article__category">Articles géopolitique</div>
-                <p class="article__title">Les relations sino-suisses: Économie contre Influence</p>
+                <a href="" id="arrow-link" aria-label="Back">
+                    <img class="arrow" src="../img/article/&_icon_back.svg" alt="back-arrow">
+                </a>
+                <a href="" class="caterory-link">Articles géopolitique</a>
+                <p class="article__title"><b>Les relations sino-suisses: Économie contre Influence</b></p>
                 <p class="article__date">23 avril 2019</p>
-                <p class="article__text">
+                <p class="article__text first">
                     La République Populaire de Chine (RPC) et la Confédération Suisse entretiennent des relations
                     privilégiées depuis près
                     de 70 ans. La Suisse bénéficie d’opportunités économiques majeures en échange de son influence
@@ -47,7 +65,7 @@
                     d’éventuelles tensions avec ses
                     partenaires occidentaux.
                 </p>
-                <img src="../img/article/&_image.png" alt="relations">
+                <img class="img-secondary" src="../img/article/&_image.png" alt="relations">
                 <p class="article__text">
                     Berne est un interlocuteur stratégique de Pékin en Europe selon l’analyse que nous livre Jocerand
                     Duthoit, consultant en
@@ -64,9 +82,11 @@
 
                 <p class="article__text"></p>
                 <p class="article__text">
-                    Ces bonnes relations, renforcées par un accord de libre-échange en 2014, ont des répercussions sur
+                    Ces bonnes relations, renforcées par un <a href="" class="color"> accord de libre-échange en
+                        2014</a>, ont des répercussions sur
                     la performance
-                    économique des deux pays. D’après le Secrétariat d'État à l'économie, les exportations suisses en
+                    économique des deux pays. D’après le <a href="#" class="color">Secrétariat d'État à l'économie</a>,
+                    les exportations suisses en
                     Chine sont passées de
                     CHF 5,4 milliards en 2007 à CHF 25 milliards en 2017. Parallèlement, les importations chinoises en
                     Suisse sont passées
@@ -85,7 +105,8 @@
                     surveillance des
                     marchés financiers (FINMA) pour démarrer ses activités à Zürich. L’expertise helvétique en matière
                     financière est telle
-                    que la Bank of China a décidé d’ouvrir une filiale à Genève en juin 2018. L’addition de la licence
+                    que la Bank of China a décidé d’<a href="#" class="color">ouvrir une filiale à Genève</a> en juin
+                    2018. L’addition de la licence
                     bancaire à
                     l’autorisation chinoise donnée à ses banques d’utiliser le Yuan pour réaliser des opérations
                     financières, permet à la
@@ -102,7 +123,8 @@
                     géoéconomique de la
                     Chine » afin de positionner son territoire comme une étape incontournable du projet en Europe. La
                     Suisse participera
-                    d’ailleurs à la deuxième édition du Belt and Road Forum fin avril 2019. Elle devrait signer un
+                    d’ailleurs à la <a href="#" class="color">deuxième édition du Belt and Road Forum fin avril
+                        2019</a>. Elle devrait signer un
                     protocole d’accord en vue
                     d’une coopération sino-suisse en Asie centrale qui confirmerait le propos du consultant genevois.
                 </p>
@@ -142,7 +164,7 @@
                 </p>
                 <p class="article__text">
                     Retrouvez la totalité de l’article « Les relations sino-suisses : Economie contre Influence » de
-                    Jocerand Duthoit ici.
+                    Jocerand Duthoit <a href="#" class="color">ici</a>.
                 </p>
 
                 <img src="../img/article/&_video.jpg" alt="YouTube video">
@@ -150,10 +172,13 @@
 
             <section class="download">
                 <p class="download__title">Téléchargez <b>Le Fichier<b></p>
-                <div class="download__context">
-                    <img src="../img/article/&_icon.svg" alt="">
-                    <p class="download__subtitle">Les relations sino-suisses: Économie contre Influence.pdf</p>
-                </div>
+                <a href="">
+                    <div class="download__context">
+                        <img src="../img/article/&_icon (2).svg" alt="file">
+                        <p class="download__subtitle"> Les relations sino-suisses: Économie contre Influence.pdf</p>
+                    </div>
+                </a>
+
             </section>
             <section class="contascts">
                 <div class="contact-content">
@@ -178,15 +203,13 @@
                 <div class="contact-form">
                     <form action="#" method="post">
                         <input type="text" placeholder="Name" class="name" required>
-                        <input type="email" placeholder="Email 
-                        
-                        ar.yarmoshuk@gmail.com" class="mail" required
+                        <input type="email" placeholder="Email" class="mail" required
                             pattern="^([a-z0-9_-]+\.)*[a-z0-9_-]+@[a-z0-9_-]+(\.[a-z0-9_-]+)*\.[a-z]{2,6}$">
                         <input class="text" placeholder="Sujet" class="theme" required>
                         <textarea id="msg" placeholder="Message" required="required"></textarea>
                         <button type="submit" class="btn">
                             Soumettre
-                            <div></div>
+                            <img src="../img/contacts/Frame 259.svg"></img>
                         </button>
                     </form>
                 </div>

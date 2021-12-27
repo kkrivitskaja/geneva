@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto:wght@300;400;500;700&display=swap');
+
 @font-face {
     font-family: 'HelveticaNeueCyr';
     src: url('HelveticaNeueCyr-Medium.eot');
@@ -54,6 +60,7 @@
 }
 
 
+
 *,
 *::before,
 *::after {
@@ -66,203 +73,229 @@
     --clr-text: #000000;
     --clr-text-secondary: #FFFFFF;
     --clr-text-disabled: #B8B8B8;
+    --clr-text-grey: #333333;
     --clr-bg-gray: #F7F7F7;
     --clr-bg-light: #FFFFFF;
     --clr-bg-primary: #004489;
     --clr-bg-secondary: #83A8EF;
     --clr-bg-third: #003870;
+    --clr-border-first: #33608D;
+    --clr-fontfamily-primary: 'HelveticaNeueCyr';
+    --clr-fontfamily-secondary: 'Roboto',
+        sans-serif;
+    --clr-fontfamily-tertiary: 'Montserrat',
+        sans-serif;
 }
 
 body {
-    margin: 0 0.8em;
+    margin: 0 16px;
     background-color: var(--clr-bg-light);
     color: var(--clr-text);
     line-height: 150%;
-    font-family: 'HelveticaNeueCyr';
-    max-width: 1224px;
-    width: 100%;
-    margin: 0 auto;
+    font-family: var(--clr-fontfamily-primary);
 }
 
 header {
+    width: calc(100% - 16px);
+    margin-bottom: 7px;
+
+}
+
+hr {
+    width: 100vw;
+    border: 1px solid #E8E8E8;
+    margin-left: -16px;
+}
+
+.logo-wrapper {
     display: flex;
     align-items: center;
-    margin: 17px 0;
-    flex-grow: 1;
-    display: flex;
-    justify-content: space-between;
-    max-width: 1224px;
-    width: 100%;
+    margin-top: 7px;
+}
+
+.container {
+    display: inline-block;
+    cursor: pointer;
+    width: 28px;
+    height: 28px;
+}
+
+
+.bar1,
+.bar2,
+.bar3 {
+    width: 19px;
+    height: 2px;
+    background-color: var(--clr-text);
+    margin: 6px auto;
+    transition: 0.4s;
+}
+
+/* animation for burger lines */
+.change .bar1 {
+
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+    /* transform: rotate(-135deg); */
+
+}
+
+.change .bar2 {
+    opacity: 0;
+}
+
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+    /* transform: rotate(-45deg); */
+}
+
+.logo {
+    max-width: 58%;
+    margin: 0 auto;
 }
 
 .header-wrapper {
-    display: flex;
-    gap: 2.23em;
-    margin-top: 12px;
+    display: none;
 }
 
-.nav a {
-    text-decoration: none;
+.contascts {
+    margin-top: 24px;
+}
+
+.contact-content {
+    max-width: 733px;
+}
+
+.contacts__title {
+    font-family: var(--clr-fontfamily-secondary);
+    font-style: normal;
+    font-weight: 200;
     font-size: 16px;
     line-height: 100%;
-    color: var(--clr-text);
+    letter-spacing: 0.15px;
+    background-color: var(--clr-bg-secondary);
+    width: min(71vw, 812px);
+    margin-left: -16px;
+    padding: 12px 16px;
 }
 
-.nav a.active {
-    color: var(--clr-bg-primary);
-    margin-left: 34px;
+.contacts-info {
+    margin-top: 24px;
+    margin-bottom: 41px;
+}
+
+
+.contact-item {
+    font-family: var(--clr-fontfamily-secondary);
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.2px;
+    display: flex;
+}
+
+.contact-item>div:first-child {
+    width: 61px;
+    margin-right: 15px;
+}
+
+.contact-form {
+    background-color: var(--clr-bg-third);
+    margin: 0 -16px;
+    width: min(100vw, 672px);
+    min-height: 566px;
+}
+
+form {
+    width: min(90vw, 400px);
+    margin: 0 auto;
+    padding: 32px 0;
+
+}
+
+input,
+textarea {
+    min-height: 44px;
+    width: min(90vw, 400px);
+    background-color: var(--clr-bg-third);
+    border: 1px solid var(--clr-border-first);
+    font-size: 16px;
+    line-height: 100%;
+    margin-bottom: 28px;
+    align-items: center;
+
+}
+
+/*change placeholder color*/
+::-webkit-input-placeholder {
+    color: var(--clr-text-secondary);
+    padding-left: 12px;
+}
+
+#msg {
+    min-height: 206px;
+    padding-top: 14px;
+}
+
+input:hover,
+textarea:hover,
+input:focus,
+textarea:focus {
+    border: 1px solid var(--clr-bg-light);
+}
+
+.btn {
+    background-color: transparent;
+    background: transparent;
+    outline: none;
+    border: 1px solid var(--clr-bg-light);
+    color: var(--clr-text-secondary);
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0.15px;
+    float: right;
+    padding: 14px 0 14px 16px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn img {
+    margin-right: auto;
+    padding-right: 40px;
+    padding-left: 33px;
+}
+
+footer {
+    min-height: 164px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .social-links {
+    width: 164px;
     display: flex;
-    gap: 0.6em;
+    justify-content: space-between;
 }
 
-main {
-    flex: 1 0 auto;
-    width: 100%;
-    }
-
-
-
-    .contascts {
-        margin-top: 72px;
-        display: flex;
-    }
-
-    .contacts__title {
-        background-color: #83A8EF;
-        margin-top: 72px;
-        margin-left: -108px;
-        position: relative;
-        display: flex;
-        align-items: center;
-        z-index: 100;
-    }
-
-    .contacts__title {
-        font-size: 44px;
-        line-height: 100%;
-        letter-spacing: 0.15px;
-        font-weight: lighter;
-        padding: 28px 390px 28px 108px;
-    }
-
-    .contacts-info {
-        margin-top: 49px;
-        display: flex;
-        flex-direction: column;
-        gap: 1.4em;
-    }
-
-    .contact-item {
-        font-size: 18px;
-        line-height: 18px;
-        letter-spacing: 0.2px;
-        display: flex;
-        gap: 1em;
-    }
-
-    .contact-form {
-        background-color: var(--clr-bg-third);
-        z-index: -1;
-        padding: 81px 187px 81px 120px;
-        margin-left: -80px;
-        z-index: 30;
-    }
-
-    .contact-form form {
-        display: flex;
-        flex-direction: column;
-    }
-
-    input,
-    textarea {
-        min-height: 44px;
-        width: 200px;
-        background-color: var(--clr-bg-third);
-        border: 1px solid var(--clr-bg-light);
-        font-size: 16px;
-        line-height: 100%;
-        margin-bottom: 28px;
-        align-items: center;
-        box-sizing: border-box;
-        width: 100%;
-    }
-
-    .name {
-        border: 1px solid #33608D;
-    }
-
-    #msg {
-        border: 1px solid #33608D;
-        min-height: 206px;
-        padding-top: 14px;
-    }
-
-    /*word transposition*/
-    input::placeholder {
-        white-space: pre-wrap;
-    }
-
-    /*change placeholder color*/
-    ::-webkit-input-placeholder {
-        color: var(--clr-text-secondary);
-        padding-left: 12px;
-    }
-
-    /*invalid input*/
-    /* input:invalid
-input:required  
-{
-    border: 1px solid red;
-}*/
-
-    .btn {
-        background-color: transparent;
-        background: transparent;
-        outline: none;
-        border: 1px solid var(--clr-bg-light);
-        color: var(--clr-text-secondary);
-        max-width: 156px;
-        font-size: 16px;
-        line-height: 100%;
-        letter-spacing: 0.15px;
-        margin-top: 18px;
-        margin-right: 5px;
-        margin-left: 240px;
-        min-height: 44px;
-        float: right;
-        display: flex;
-        padding: 0 14px 0 16px;
-        align-items: center;
-        justify-content: space-between;
-        cursor: pointer;
-
-    }
-
-    .btn div {
-        padding: 10px 24px 10px 25px;
-        display: inline-block;
-        background-repeat: no-repeat;
-        background-image: url(../img/contacts/Frame\ 259.svg);
-        cursor: pointer;
-    }
-
-footer {
-    min-height: 168px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    flex: 0 0 auto;
+.social-link:hover,
+.social-link:focus {
+    opacity: 0.3;
 }
 
 .footer__text {
-    margin-top: 24px;
-    max-width: 295px;
-    min-height: 14px;
+    font-family: var(--clr-fontfamily-primary);
+    font-style: normal;
+    font-weight: 300;
     font-size: 14px;
-    text-align: center;
     line-height: 100%;
+    text-align: center;
+    letter-spacing: 0.2px;
+    margin-top: 24px;
 }
