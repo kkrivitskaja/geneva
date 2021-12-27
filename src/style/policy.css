@@ -17,12 +17,21 @@
     letter-spacing: -0.523077px;
     margin-top: 40px;
 }
-.policy__item{
-    font-family: var(--clr-fontfamily-secondary);
+.policy__item {
+        font-family: var(--clr-fontfamily-secondary);
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
     letter-spacing: -0.523077px;
     margin-top: 16px;
+}
+
+.list__item {
+  font-family: var(--clr-fontfamily-secondary);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  letter-spacing: -0.523077px;
+  margin-left: 25px;
 }
 

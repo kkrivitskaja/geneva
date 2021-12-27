@@ -299,3 +299,59 @@ footer {
     letter-spacing: 0.2px;
     margin-top: 24px;
 }
+
+
+@media (min-width: 800px) {
+    .logo-wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .logo {
+        max-width: 100%;
+        margin: 0 0;
+    }
+
+   
+
+    .contascts {
+        display: flex;
+        justify-content: center;
+        margin-top: 0;
+    }
+
+    .contacts__title {
+        z-index: 10;
+        margin-top: 72px;
+    }
+
+    .contact-form {
+        z-index: -1;
+    }
+
+    .header-wrapper {
+        display: block;
+        display: flex;
+        align-items: center;
+    }
+
+    .container,
+    hr {
+        display: none;
+    }
+
+    .nav {
+        width: 244px;
+        display: flex;
+        justify-content: space-between;
+        margin-right: 48px;
+    }
+
+    .nav__link {
+        text-decoration: none;
+        font-family: var(--clr-border-first);
+        font-size: 16px;
+        line-height: 100%;
+        color: var(--clr-text);
+    }
+}

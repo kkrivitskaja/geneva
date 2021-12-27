@@ -120,12 +120,6 @@ img {
     width: 80%;
 }
 
-
-
-
-
-
-
 @media (min-width: 800px) {
     .logo-wrapper {
         display: flex;
