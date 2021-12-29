@@ -1,3 +1,13 @@
+main {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.article {
+    width: 90%;
+    margin: 0 auto;
+}
+
 #arrow-link {
     display: none;
 }
@@ -96,7 +106,7 @@ img {
     flex-direction: column;
     align-items: center;
     background-color: var(--clr-bg-gray);
-    margin: 0 -16px;
+    /* margin: 0 -16px; */
 }
 
 .download__title {
@@ -139,13 +149,23 @@ img {
 }
 
 @media (min-width: 800px) {
-    .article__content {
+    main {
         margin-top: 48px;
+    }
+
+    .article {
+        width: 71%;
+        /* if use 70 all context shifts down a lot */
+        margin: 0 auto;
+    }
+
+    .article__content {
+        margin-top: 0px;
     }
 
     #arrow-link {
         display: block;
-        height: 14px;
+        height: 0;
     }
 
     .caterory-link {
@@ -158,7 +178,6 @@ img {
 
     .article__date {
         margin-top: 32px;
-
     }
 
     .first {
@@ -181,7 +200,7 @@ img {
     }
 
     .download {
-        margin: 0 -212px;
+        margin: 0 0;
         margin-top: 72px;
         height: 289px;
     }
