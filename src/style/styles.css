@@ -349,7 +349,13 @@ textarea:focus {
     margin-right: auto;
     padding-right: 24px;
     padding-left: 33px;
+    filter: invert(99%) sepia(81%) saturate(2%) hue-rotate(98deg) brightness(104%) contrast(100%);
 }
+
+/*chanding svg icon color on hover*/
+.btn:hover img {
+     filter: invert(12%) sepia(55%) saturate(6136%) hue-rotate(199deg) brightness(97%) contrast(103%);
+     }
 
 footer {
     min-height: 164px;
@@ -429,10 +435,13 @@ footer {
 
     .nav__link {
         text-decoration: none;
-        font-family: var(--clr-border-first);
-        font-size: 16px;
+                font-size: 16px;
         line-height: 100%;
         color: var(--clr-text);
+    }
+
+     .nav  a.active {
+       color: var(--clr-bg-primary);
     }
 
     body {
