@@ -1,37 +1,72 @@
-.policy__title{
-    font-family: var(--clr-fontfamily-secondary);
-    font-style: normal;
-    font-weight: bold;
-    font-size: 52px;
-    line-height: 62px;
-        letter-spacing: -1.7px;
-        margin-top: 48px;
-        margin-bottom: 40px;
-}
+ main {
+     margin-top: 32px;
+ }
 
-.policy__subtitle {
-    font-family: var(--clr-fontfamily-secondary);
-    font-style: normal;
-    font-weight: 500;
-    font-size: 20px;
-    letter-spacing: -0.523077px;
-    margin-top: 40px;
-}
-.policy__item {
-        font-family: var(--clr-fontfamily-secondary);
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    letter-spacing: -0.523077px;
-    margin-top: 16px;
-}
 
-.list__item {
-  font-family: var(--clr-fontfamily-secondary);
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  letter-spacing: -0.523077px;
-  margin-left: 25px;
-}
+ .policity {
+     width: 90%;
+     margin: 0 auto;
+ }
 
+
+ /* .policy__context {
+     margin-top: 32px;
+ } */
+
+ .policy__title {
+     font-family: var(--clr-fontfamily-secondary);
+     font-style: normal;
+     font-weight: bold;
+     font-size: clamp(1.2em, 3.6vw, 2.6em);
+     line-height: 62px;
+     letter-spacing: -1.7px;
+     margin-top: 40px;
+     margin-bottom: 40px;
+ }
+
+ .policy__item {
+     font-family: var(--clr-fontfamily-secondary);
+     font-style: normal;
+     font-weight: normal;
+     font-size: 16px;
+     letter-spacing: -0.523077px;
+     margin-top: 16px;
+     line-height: 150%;
+ }
+
+ .policy__subtitle {
+     font-family: var(--clr-fontfamily-secondary);
+     font-style: normal;
+     font-weight: 500;
+     font-size: 20px;
+     letter-spacing: -0.523077px;
+     margin-top: 40px;
+ }
+
+ .policy__list {
+     margin-top: 10px;
+ }
+
+ .list__item {
+     font-family: var(--clr-fontfamily-secondary);
+     font-style: normal;
+     font-weight: normal;
+     font-size: 16px;
+     letter-spacing: -0.523077px;
+     margin-left: 25px;
+     line-height: 150%;
+ }
+
+
+ @media (min-width: 800px) {
+     main {
+         margin-top: 48px;
+     }
+
+     .policity {
+         width: 71%;
+         /* if use 70 all context shifts down a lot */
+         margin: 0 auto;
+     }
+
+     }

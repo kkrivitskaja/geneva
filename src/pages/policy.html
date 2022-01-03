@@ -18,38 +18,58 @@
                     <div class="bar1"></div>
                     <div class="bar2"></div>
                     <div class="bar3"></div>
+                    <div class="sidebar">
+                        <nav class="nav">
+                            <a href="../pages/services.html" class="nav__link">Services & Méthodologie</a>
+                            <a href="../pages/blog.html" class="nav__link active">Blog</a>
+                        </nav>
+                        <div class="social-links">
+                            <a href="" class="social-link" aria-label="Instagram"><img src="../img/Social-i.svg"
+                                    alt="Instagram" class="social-img"></a>
+                            <a href="" class="social-link" aria-label="Twitter"><img src="../img/Social-tw.svg"
+                                    alt="Twitter" class="social-img"></a>
+                            <a href="" class="social-link" aria-label="Meta"><img src="../img/Social-f.svg" alt="Meta"
+                                    class="social-img"></a>
+                            <a href="" class="social-link" aria-label="LinkedIn"><img src="../img/Social-in.svg"
+                                    alt="LinkedIn" class="social-img"></a>
+                        </div>
+                    </div>
                 </div>
+    
+    
                 <script>
-                    function burger(x) {
-                        x.classList.toggle("change");
+                    function burger(container, sidebar) {
+                        container.classList.toggle("change");
+                        sidebar.classList.toggle("change");
                     }
                 </script>
-                <img src="../img/&_logo.png" alt="Geneva Intelligence" class="logo">
-
+                <div class="img__wrapper">
+                    <img src="../img/&_logo.png" alt="Geneva Intelligence">
+                </div>
+    
                 <div class="header-wrapper ">
                     <nav class="nav">
                         <a href="../pages/services.html" class="nav__link">Services & Méthodologie</a>
                         <a href="../pages/blog.html" class="nav__link active">Blog</a>
                     </nav>
                     <div class="social-links">
-                        <a href="" class="social-link" aria-label="Instagram"><img src="../img/Social-i.png"
-                                alt="Instagram" class="social-img"></a>
-                        <a href="" class="social-link" aria-label="Twitter"><img src="../img/Social-tw.png"
-                                alt="Twitter" class="social-img"></a>
+                        <a href="" class="social-link" aria-label="Instagram"><img src="../img/Social-i.png" alt="Instagram"
+                                class="social-img"></a>
+                        <a href="" class="social-link" aria-label="Twitter"><img src="../img/Social-tw.png" alt="Twitter"
+                                class="social-img"></a>
                         <a href="" class="social-link" aria-label="Meta"><img src="../img/Social-f.png" alt="Meta"
                                 class="social-img"></a>
-                        <a href="" class="social-link" aria-label="LinkedIn"><img src="../img/Social-in.png"
-                                alt="LinkedIn" class="social-img"></a>
+                        <a href="" class="social-link" aria-label="LinkedIn"><img src="../img/Social-in.png" alt="LinkedIn"
+                                class="social-img"></a>
                     </div>
                 </div>
             </div>
-
-
+    
         </header>
         <hr>
 
         <main>
-            <section class="policy__context">
+            <section class="policy__context policity">
                 <div class="policy__title">Privacy Policy</div>
                 <p class="policy__item">
                     This privacy policy has been compiled to better serve those who are concerned with how their
@@ -87,15 +107,18 @@
                 </div>
                 <p class="policy__item">
                     We may use such information in the following ways:
-                    <ul>
-                        <li class="list__item">To personalize your experience on our site and to allow us to deliver the type of content
+                    <ul class="policy__list">
+                        <li class="list__item">To personalize your experience on our site and to allow us to deliver the
+                            type of content
                             and product offerings in which
                             you are most interested.</li>
                         <li class="list__item">To improve our website in order to better serve you.</li>
-                        <li class="list__item">To allow us to better service you in responding to your customer service requests.</li>
+                        <li class="list__item">To allow us to better service you in responding to your customer service
+                            requests.</li>
                         <li class="list__item">To administer a contest, promotion, survey or other site feature.</li>
                         <li class="list__item">To quickly process your transactions.</li>
-                        <li class="list__item">To send periodic emails regarding your order or other products and services.</li>
+                        <li class="list__item">To send periodic emails regarding your order or other products and
+                            services.</li>
                     </ul>
                 </p>
 
@@ -146,11 +169,13 @@
                 </p>
                 <p class="policy__item">
                     We use cookies to:
-                    <ul>
+                    <ul class="policy__list">
                         <li class="list__item">Help remember and process the items in the shopping cart.</li>
                         <li class="list__item">Understand and save user's preferences for future visits.</li>
-                        <li class="list__item">Compile aggregate data about site traffic and site interactions in order to offer better
-                            site experiences and tools in the future. We may also use trusted third party services that track this information on our
+                        <li class="list__item">Compile aggregate data about site traffic and site interactions in order
+                            to offer better
+                            site experiences and tools in the future. We may also use trusted third party services that
+                            track this information on our
                             behalf.
                         </li>
                     </ul>
@@ -273,10 +298,12 @@
                     personal information, as
                     described in this Privacy Policy, depends on the information we collect and the specific context in
                     which we collect it. We may process your personal information because:
-                    <ul>
-                        <li class="list__item">We need to perform a contract with you, such as when you create a Policy with us</li>
+                    <ul class="policy__list">
+                        <li class="list__item">We need to perform a contract with you, such as when you create a Policy
+                            with us</li>
                         <li class="list__item">You have given us permission to do so</li>
-                        <li class="list__item">The processing is in our legitimate interests and it's not overridden by your rights</li>
+                        <li class="list__item">The processing is in our legitimate interests and it's not overridden by
+                            your rights</li>
                         <li class="list__item">For payment processing purposes</li>
                         <li class="list__item">To comply with the law</li>
                     </ul>
@@ -284,8 +311,9 @@
                 <p class="policy__item">
                     If you are a resident of the European Economic Area (EEA), you have certain data protection rights.
                     In certain circumstances, you have the following data protection rights:
-                    <ul>
-                        <li class="list__item">The right to access, update or to delete the personal information we have on you</li>
+                    <ul class="policy__list">
+                        <li class="list__item">The right to access, update or to delete the personal information we have
+                            on you</li>
                         <li class="list__item">The right of rectification</li>
                         <li class="list__item">The right to object</li>
                         <li class="list__item">The right of restriction</li>
@@ -309,15 +337,18 @@
                 </div>
                 <p class="policy__item">
                     Under the CCPA, California consumers have the right to:
-                    <ul>
-                        <li class="list__item">Request that a business that collects a consumer's personal data disclose the categories and
+                    <ul class="policy__list">
+                        <li class="list__item">Request that a business that collects a consumer's personal data disclose
+                            the categories and
                             specific pieces of personal
                             data that a business has collected about consumers.
                         </li>
-                        <li class="list__item">Request that a business delete any personal data about the consumer that a business has
+                        <li class="list__item">Request that a business delete any personal data about the consumer that
+                            a business has
                             collected.
                         </li>
-                        <li class="list__item">Request that a business that sells a consumer's personal data, not sell the consumer's
+                        <li class="list__item">Request that a business that sells a consumer's personal data, not sell
+                            the consumer's
                             personal data.
                         </li>
                     </ul>

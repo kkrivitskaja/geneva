@@ -5,85 +5,765 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../style/styles.css">
     <link rel="stylesheet" type="text/css" href="../style/services.css">
     <title>Services & Méthodologie</title>
 </head>
 
 <body>
-    <div class="wrapper">
+    <div class="main-grid">
         <header>
-            <div class="header">
-                <div class="logo"></div>
-                <div class="context">
-                    <nav class="navigation">
-                        <a href="http://">Services & Méthodologie</a>
-                        <a href="http://">Blog</a>
+            <div class="logo-wrapper">
+                <div class="container" onclick="burger(this)">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                    <div class="sidebar">
+                        <nav class="nav">
+                            <a href="../pages/services.html" class="nav__link">Services & Méthodologie</a>
+                            <a href="../pages/blog.html" class="nav__link active">Blog</a>
+                        </nav>
+                        <div class="social-links">
+                            <a href="" class="social-link" aria-label="Instagram"><img src="../img/Social-i.svg"
+                                    alt="Instagram" class="social-img"></a>
+                            <a href="" class="social-link" aria-label="Twitter"><img src="../img/Social-tw.svg"
+                                    alt="Twitter" class="social-img"></a>
+                            <a href="" class="social-link" aria-label="Meta"><img src="../img/Social-f.svg" alt="Meta"
+                                    class="social-img"></a>
+                            <a href="" class="social-link" aria-label="LinkedIn"><img src="../img/Social-in.svg"
+                                    alt="LinkedIn" class="social-img"></a>
+                        </div>
+                    </div>
+                </div>
+                <script>
+                    function burger(container, sidebar) {
+                        container.classList.toggle("change");
+                        sidebar.classList.toggle("change");
+                    }
+                </script>
+                <div class="img__wrapper">
+                    <img src="../img/&_logo.png" alt="Geneva Intelligence">
+                </div>
+
+                <div class="header-wrapper ">
+                    <nav class="nav">
+                        <a href="../pages/services.html" class="nav__link">Services & Méthodologie</a>
+                        <a href="../pages/blog.html" class="nav__link active">Blog</a>
                     </nav>
-                    <div class="social-lincs">
-                        <img src="../img/Social-i.png" alt="Instagram">
-                        <img src="../img/Social-tw.png" alt="Twitter">
-                        <img src="../img/Social-f.png" alt="Meta">
-                        <img src="../img/Social-in.png" alt="LinkedIn">
+                    <div class="social-links">
+                        <a href="" class="social-link" aria-label="Instagram"><img src="../img/Social-i.png"
+                                alt="Instagram" class="social-img"></a>
+                        <a href="" class="social-link" aria-label="Twitter"><img src="../img/Social-tw.png"
+                                alt="Twitter" class="social-img"></a>
+                        <a href="" class="social-link" aria-label="Meta"><img src="../img/Social-f.png" alt="Meta"
+                                class="social-img"></a>
+                        <a href="" class="social-link" aria-label="LinkedIn"><img src="../img/Social-in.png"
+                                alt="LinkedIn" class="social-img"></a>
                     </div>
                 </div>
             </div>
+
         </header>
-        <main class="main">
+        <hr>
+        <main>
             <section class="hero">
-                <div>
-                    <p> Nous <span>accompagnons votre </span><b>stratégie de<br> différenciation</b> et votre
-                        positionnement</p>
+                <div class="hero__title">
+                    <p> Nous <span>accompagnons votre</span> <b> positionnement stratégique</b> et <b>votre gestion des
+                            risques</b> </p>
                 </div>
             </section>
-            <section class="contacts">
-                <div class="title contacts__title">
-                    <p>Nous<b> contacter</b></p>
+            <section class="info">
+                <p class="info-text">Spécialisée en <b>Market Intelligence</b> et en renseignements d’affaires, la
+                    société
+                    <b>Geneva Intelligence</b> accompagne les
+                    entreprises et les organisations pour améliorer leur positionnement stratégique, leur gestion des
+                    risques et leur
+                    compétitivité sur leurs marchés.</p>
+                <p class="info-text">Les services de <b>Geneva Intelligence</b> visent à transmettre de l’information à
+                    forte valeur ajoutée pour faciliter la
+                    compréhension des enjeux, s’adapter aux évolutions de son environnement et prendre l’avantage sur
+                    ses concurrents.</p>
+                <p class="info-text"><b>Geneva Intelligence</b> conseille ses clients pour les aider à prendre les
+                    bonnes décisions tactiques et stratégiques au bon moment.</p>
+            </section>
+            <section class="quote">
+                <p>
+                    Nos <b>Services</b>
+                </p>
+
+            </section>
+
+            <section class="slider">
+
+                <div class="tabs">
+                    <div id="content-1">
+                        <section class="carousel">
+                            <input type="radio" name="slider" id="slide1" checked>
+                            <input type="radio" name="slider" id="slide2">
+                            <input type="radio" name="slider" id="slide3">
+                            <input type="radio" name="slider" id="slide4">
+
+                            <div class="controls">
+                                <label for="slide1"></label>
+                                <label for="slide2"></label>
+                                <label for="slide3"></label>
+                                <label for="slide4"></label>
+                            </div>
+
+                            <div class="bullets">
+                                <label for="slide1"></label>
+                                <label for="slide2"></label>
+                                <label for="slide3"></label>
+                                <label for="slide4"></label>
+                            </div>
+
+                            <div class="slides">
+                                <div class="slides-container">
+                                    <div class="slide sl1">
+                                        <div class="inner">
+                                            <div class="slide-title">
+                                                <b>Conquêtes De Nouveaux Marchés</b>
+                                            </div>
+                                            <div class="slide-img">
+                                                <img src="../img/service/&_video-slider_mob.png" alt="video-slider">
+                                            </div>
+                                            <div class="slider-text">
+                                                <p>
+                                                    Nous accompagnons votre intelligence commerciale et votre croissance
+                                                </p>
+                                                <ul>
+                                                    <li class="list-item"><span>Veille commerciale et marché:</span>
+                                                        identification
+                                                        d’opportunités
+                                                        commerciales, de prospects et d’appels d’offre, création
+                                                        de fichier de prospects, identification de fournisseurs et de
+                                                        partenaires.</li>
+                                                    <li class="list-item"><span>Etude et analyse de marché:</span>
+                                                        identification de
+                                                        nouveaux
+                                                        marchés, évaluation des parts de marché et des facteurs clés de
+                                                        succès, analyse des risques et des obstacles à lever,</li>
+                                                    <li class="list-item"><span>Décryptage des attentes et des besoins
+                                                            des
+                                                            consommateurs,</span> des
+                                                        tendances de consommation, focus group et sondages,
+                                                        identification des zones de chalandise.</li>
+                                                    <li class="list-item"><span>Cartographie des réseaux et des relais
+                                                            de
+                                                            croissance:</span>
+                                                        associations professionnelles, think tank et cercles de
+                                                        réflexion, partenaires académiques et/commerciaux, hubs,
+                                                        clusters, autorités
+                                                        publiques et administratives, entités
+                                                        culturelles et représentations d’intérêt…</li>
+                                                    <li class="list-item"><span>Adaptation de la stratégie
+                                                            d’entreprise,</span> des
+                                                        services et des
+                                                        produits pour renforcer les offres commerciales, la
+                                                        démarche marketing et la prospection.</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="slide">
+                                        <div class="inner">
+                                            <div class="slide-title">
+                                                Etude <b>de concurrence & Competitive intelligence</b>
+                                            </div>
+                                            <div class="slide-img">
+                                                <img src="../img/service/&_video-slider_mob2.png" alt="video-slider">
+                                            </div>
+                                            <div class="slider-text">
+                                                <p>
+                                                    Nous accompagnons votre intelligence concurrentielle et votre
+                                                    différenciation
+                                                </p>
+                                                <ul>
+                                                    <li class="list-item"><span>Veille marché et concurrentielle:</span>
+                                                        suivi des compétiteurs, analyse de leur visibilité et leurs
+                                                        actions de communication digitale, identification des
+                                                        nouveaux entrants, décryptage des actualités game changers dans
+                                                        un secteur.
+                                                    </li>
+                                                    <li class="list-item"><span>Benchmark des concurrents:</span>
+                                                        analyse concurrentielle des innovations technologiques,
+                                                        marketing et commerciales, des pratiques commerciales, des
+                                                        stratégies de communication.
+                                                    </li>
+                                                    <li class="list-item"><span>Etude du positionnement et de la
+                                                            stratégie des compétiteurs,</span> comparaison des
+                                                        performances financières, des valeurs et des modèles d’affaires
+                                                        des concurrents.
+                                                    </li>
+                                                    <li class="list-item"><span>Cartographie des concurrents et de leurs
+                                                            réseaux</span>
+                                                        de fournisseurs, distributeurs, prospects et clients,
+                                                        partenaires, réseaux d’affaires…
+                                                    </li>
+                                                    <li class="list-item"><span>Elaboration d’une stratégie de
+                                                            différenciation et de diversification</span> pour se
+                                                        démarquer des compétiteurs, prendre l’avantage et gagner des
+                                                        parts de marché.
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="slide">
+                                        <div class="inner">
+                                            <div class="slide-title">
+                                                Accompagnement <b>de réponses aux appels d’offres</b>
+                                            </div>
+                                            <div class="slide-img">
+                                                <img src="../img/service/&_video-slider_mob2.png" alt="video-slider">
+                                            </div>
+                                            <div class="slider-text">
+                                                <p>
+                                                    Nous vous accompagnons votre intelligence marché pour remporter vos
+                                                    appels d’offre
+                                                </p>
+                                                <ul>
+                                                    <li class="list-item"><span>Décryptage du mode d’attribution du
+                                                            marché</span>
+                                                        et du processus de décision en interne.
+                                                    </li>
+                                                    <li class="list-item"><span>Identification des adjudicateurs, des
+                                                            décideurs et AMO</span>
+                                                        concernant l’appel d’offre.
+                                                    </li>
+                                                    <li class="list-item"><span>Cartographie des processus de
+                                                            décision</span> et des acteurs stratégiques pour soutenir la
+                                                        réponse.
+                                                    </li>
+                                                    <li class="list-item"><span>Décryptage des thématiques et des
+                                                            engagements à privilégier:</span>
+                                                        détermination des critères de sélection non formalisés dans
+                                                        l’appel d’offre et évaluation de l’importance de chaque
+                                                        attente.
+                                                    </li>
+                                                    <li class="list-item"><span>Elaboration de conseils tactiques</span>
+                                                        pour augmenter les chances de succès.
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="slide">
+                                        <div class="inner">
+                                            <div class="slide-title">
+                                                Conseils<b>Conseils Een Innovation Technologique</b>
+                                            </div>
+                                            <div class="slide-img">
+                                                <img src="../img/service/&_video-slider_mob2.png" alt="video-slider">
+                                            </div>
+                                            <div class="slider-text">
+                                                <p>
+                                                    Nous soutenons votre intelligence prospective pour vous aider à
+                                                    innover
+                                                </p>
+                                                <ul>
+                                                    <li class="list-item"><span>Veille technologique et
+                                                            technique:</span>
+                                                        identification des innovations, des brevets et des tendances de
+                                                        la recherche & développement sur un marché ou des
+                                                        secteurs connexes, innovation par les usages et l’expérience
+                                                        client.
+                                                    </li>
+                                                    <li class="list-item"><span>Analyse des innovations
+                                                            sectorielles</span>
+                                                        pour se prémunir des risques et créer des opportunités de
+                                                        développement commercial pour atteindre de nouveaux clients et
+                                                        augmenter les parts de marché.
+                                                    </li>
+                                                    <li class="list-item"><span>Cartographie et benchmark des
+                                                            innovations technologiques,</span> identification et analyse
+                                                        des tendances et des partenaires potentiels.
+                                                    </li>
+                                                    <li class="list-item"><span>Formulation de conseils liés à
+                                                            l’innovation</span>
+                                                        afin d’améliorer la productivité, l’optimisation des ressources,
+                                                        la création de nouveaux produits ou services et encore
+                                                        de renforcer l’expérience client et la compétitivité.
+                                                </ul>
+                                            </div>
+
+
+
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                    <div id="content-2">
+
+
+                        <section class="carousel">
+                            <input type="radio" name="slider" id="slide1" checked>
+                            <input type="radio" name="slider" id="slide2">
+                            <input type="radio" name="slider" id="slide3">
+                            <input type="radio" name="slider" id="slide4">
+
+                            <div class="controls">
+                                <label for="slide1"></label>
+                                <label for="slide2"></label>
+                                <label for="slide3"></label>
+                                <label for="slide4"></label>
+                            </div>
+
+                            <div class="bullets">
+                                <label for="slide1"></label>
+                                <label for="slide2"></label>
+                                <label for="slide3"></label>
+                                <label for="slide4"></label>
+                            </div>
+
+                            <div class="slides">
+                                <div class="slides-container">
+                                    <div class="slide sl1">
+                                        <div class="inner">
+                                            <div class="slide-title second__slide-title">
+                                                Due<b>diligence & Conformité</b>
+                                            </div>
+                                            <div class="slide-img second__slide-img">
+                                                <img src="../img/service/&_video-slider_mob2.png" alt="video-slider">
+                                            </div>
+                                            <div class="slider-text second__slider-text">
+                                                <p>
+                                                    Nous vous aidons à identifier et éviter les risques liés à vos
+                                                    partenariats d’affaires:
+                                                </p>
+                                                <ul>
+                                                    <li class="list-item"><span>Veille réglementaire afin</span>
+                                                        de s’assurer de la conformité aux règlementations et éviter les
+                                                        risques liés aux changements réglementaires (KYC,
+                                                        LBA/AML, FINMA, FATCA, sanctions, etc.)
+                                                    </li>
+                                                    <li class="list-item"><span>Due diligence:</span>
+                                                        étude d’honorabilité des parties prenantes (personne morale
+                                                        niveau 1 à 3)
+                                                    </li>
+                                                    <li class="list-item"><span>Vérifications préalables</span> de CV et
+                                                        procédures KYC
+                                                    </li>
+
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="slide">
+                                        <div class="inner">
+                                            <div class="slide-title">
+                                                Soutien<b>Aux Litiges</b>
+
+                                            </div>
+                                            <div class="slide-img">
+                                                <img src="../img/service/&_video-slider_mob2.png" alt="video-slider">
+                                            </div>
+                                            <div class="slider-text">
+                                                <p>
+                                                    Nous vous soutenons dans vos procédures judiciaires par des
+                                                    investigations précontentieuses:
+                                                </p>
+                                                <ul>
+                                                    <li class="list-item"><span>Recueil d’éléments</span>
+                                                        de preuve en cas de soupçon de fraude, concurrence déloyale,
+                                                        pratiques anti-concurrentielles, délit d’initié,
+                                                        corruption, etc.
+                                                    </li>
+                                                    <li class="list-item"><span>Recherche d’actifs:</span>
+                                                        identification de patrimoine matériel et immatériel.
+                                                    </li>
+                                                    <li class="list-item"><span>Recherche</span> d’individu
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="slide">
+                                        <div class="inner">
+                                            <div class="slide-title">
+                                                Analyse <b>Des Risques Informationnels</b>
+
+                                            </div>
+                                            <div class="slide-img">
+                                                <img src="../img/service/&_video-slider_mob2.png" alt="video-slider">
+                                            </div>
+                                            <div class="slider-text">
+                                                <p>
+                                                    Nous vous aidons à renforcer votre intelligence des risques
+                                                    opérationnels liés à votre entreprise:
+                                                </p>
+                                                <ul>
+                                                    <li class="list-item"><span>Audit</span>
+                                                        de gestion de l’information et recommandations pour limiter les
+                                                        risques de fraude
+                                                    </li>
+                                                    <li class="list-item"><span>Cartographie</span>
+                                                        et analyse des vulnérabilités
+                                                    </li>
+                                                    <li class="list-item"><span>Lutte contre la criminalité
+                                                            économique:</span> identification et analyse des écosystèmes
+                                                        liés aux trafics illicites
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="slide">
+                                        <div class="inner">
+                                            <div class="slide-title">
+                                                Veille<b>Conseils Een Innovation Technologiqueet gestion des risques
+                                                    liés à la réputation</b>
+
+                                            </div>
+                                            <div class="slide-img">
+                                                <img src="../img/service/&_video-slider_mob2.png" alt="video-slider">
+                                            </div>
+                                            <div class="slider-text">
+                                                <p>
+                                                    Nous soutenons le rayonnement et la protection de votre réputation
+                                                </p>
+                                                <ul>
+                                                    <li class="list-item"><span>Audit d’e-réputation:</span>
+                                                        évaluation de votre présence en ligne, du sentiment et de
+                                                        l’impact.
+                                                    </li>
+                                                    <li class="list-item"><span>Veille réputation, réseaux sociaux et
+                                                            médiatique:</span>
+                                                        suivi de la notoriété d’une entreprise dans la presse print et
+                                                        en ligne, identification des risques et anticipation des
+                                                        crises.
+                                                    </li>
+                                                    <li class="list-item"><span>Amélioration de la e-réputation:</span>
+                                                        gestion du droit à l’oubli, stratégie d’enfouissement de liens,
+                                                        SEO et création de contenu.
+                                                    </li>
+                                                    <li class="list-item"><span>Cartographie des influenceurs,</span>
+                                                        des médias et des réseaux d’influence pour construire une
+                                                        stratégie d’affaires publiques et de communication.
+                                                    </li>
+                                                    <li class="list-item">Elaboration d’une<span>stratégie et d’actions
+                                                            de communication</span>
+                                                        pour consolider la notoriété de l’entreprise.
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+
+                    <div id="content-3">
+                        <section class="carousel">
+                            <input type="radio" name="slider" id="slide1" checked>
+                            <input type="radio" name="slider" id="slide2">
+                            <input type="radio" name="slider" id="slide3">
+
+                            <div class="controls">
+                                <label for="slide1"></label>
+                                <label for="slide2"></label>
+                                <label for="slide3"></label>
+                            </div>
+
+                            <div class="bullets">
+                                <label for="slide1"></label>
+                                <label for="slide2"></label>
+                                <label for="slide3"></label>
+                            </div>
+
+                            <div class="slides">
+                                <div class="slides-container">
+                                    <div class="slide sl1">
+                                        <div class="inner">
+                                            <div class="slide-title second__slide-title">
+                                                Conseils<b>En Géopolitique Et Géoéconomie</b>
+                                            </div>
+                                            <div class="slide-img second__slide-img">
+                                                <img src="../img/service/&_video-slider_mob2.png" alt="video-slider">
+                                            </div>
+                                            <div class="slider-text second__slider-text">
+                                                <p>
+                                                    Nous accompagnons votre compréhension des enjeux internationaux
+                                                </p>
+                                                <ul>
+                                                    <li class="list-item"><span>Veille géopolitique et
+                                                            sécuritaire:</span>
+                                                        suivi de l’actualité, décryptage des situations et détection des
+                                                        risques et des opportunités.
+                                                    </li>
+                                                    <li class="list-item"><span>Analyse des conséquences d’événements
+                                                            géopolitiques</span>
+                                                        et géoéconomiques sur un marché et les activités commerciales
+                                                        d’une entreprise.
+                                                    </li>
+                                                    <li class="list-item"><span>Cartographies géographiques:</span>
+                                                        représentation des territoires, compréhension des enjeux, aide à
+                                                        la prise de décisions pour le maintien des activités
+                                                        opérationnelles et des décisions d’investissement ou
+                                                        d’implantation dans un pays.
+                                                    </li>
+                                                    <li class="list-item">Elaboration de<span>fiches-pays</span> et
+                                                        évaluation du risque-pays.
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="slide">
+                                        <div class="inner">
+                                            <div class="slide-title">
+                                                Supply<b>Chain Risk Management</b>
+                                            </div>
+                                            <div class="slide-img">
+                                                <img src="../img/service/&_video-slider_mob2.png" alt="video-slider">
+                                            </div>
+                                            <div class="slider-text">
+                                                <p>
+                                                    Nous soutenons vos imports/exports
+                                                </p>
+                                                <ul>
+                                                    <li class="list-item"><span>Veille normative, réglementaire et
+                                                            douanière:</span>
+                                                        détection des évolutions réglementaires, législatives ou
+                                                        administratives, des certifications, des contraintes
+                                                        douanières, et négociations internationales de libre-échange ou
+                                                        guerres commerciales ayant un impact sur les
+                                                        exportations de biens et services.
+                                                    </li>
+                                                    <li class="list-item"><span>Détection des risques de fragilisation
+                                                            ou de rupture de la chaîne d’approvisionnement:</span>
+                                                        catastrophes naturelles ou technologiques, conflits et
+                                                        instabilité politique, accidents, tensions sociales et
+                                                        manifestations…
+                                                    </li>
+                                                    <li class="list-item"><span>Analyse et conseils pour adapter les
+                                                            offres commerciales et les produits aux contraintes</span>
+                                                        règlementaires et douanières, politiques et juridiques,
+                                                        environnementales et sociales.
+                                                    </li>
+                                                    <li class="list-item"><span>Cartographie des risques et
+                                                            identification de fournisseurs</span> pour pallier aux
+                                                        risques de supply chain.
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="slide">
+                                        <div class="inner">
+                                            <div class="slide-title">
+                                                Implantation <b>Et Développement International</b>
+
+                                            </div>
+                                            <div class="slide-img">
+                                                <img src="../img/service/&_video-slider_mob2.png" alt="video-slider">
+                                            </div>
+                                            <div class="slider-text">
+                                                <p>
+                                                    Nous améliorons votre intelligence territoriale et culturelle
+                                                </p>
+                                                <ul>
+                                                    <li class="list-item"><span>Evaluation et suivi de la
+                                                            situation</span>
+                                                        économique, politique, légale et environnementale d’un pays ou
+                                                        d’une zone géographique afin d’arbitrer de la pertinence
+                                                        d’une politique d’investissement et de croissance externe.
+                                                    </li>
+                                                    <li class="list-item"><span>Analyse sectorielle et
+                                                            territoriale:</span>
+                                                        identification des zones géographiques attractives, des enjeux
+                                                        économiques et commerciaux, d’opportunités économiques,
+                                                        de l’ouverture du pays, du potentiel de marché et relais de
+                                                        croissances pertinents. Etude des habitudes
+                                                        socio-culturelles et des pratiques de consommation locales.
+                                                    </li>
+                                                    <li class="list-item"><span>Cartographie des centres économiques
+                                                            stratégiques,</span> des foyers de consommateurs, des lieux
+                                                        de décision politiques, des zones d’instabilité et des lieux
+                                                        d'implantation les
+                                                        plus pertinents.
+                                                    </li>
+                                                    <li class="list-item">Détection de<span>cibles de croissance
+                                                            externe</span> pour préparer une stratégie d’acquisitions.
+                                                    </li>
+                                                    <li class="list-item"><span>Assistance dans les projets de
+                                                            développement</span> ou d’implantation en Suisse ou à
+                                                        l’international, identification de partenaires, mise en relation
+                                                        et développement de
+                                                        réseaux locaux.
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                                            </div>
+                    <div class="tabmenu">
+                        <a href="#content-1" class="tab__item-first">
+                            <img src="../img/service/tab_1.svg" alt="">
+                            <span>INTELLIGENCE STRATEGIQUE</span> </a>
+                        <a href="#content-2" class="tab__item-second">
+                            <img src="../img/service/tab_2.svg" alt="">
+                            RENSEIGNEMENT D’AFFAIRES </a>
+                        <a href="#content-3" class="tab__item-third">
+                            <img src="../img/service/tab_3.svg" alt="">
+                            GEOPOLITIQUE</a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="metodology">
+                <p>
+                    Nos <b>Methodologie</b>
+                </p>
+            </section>
+
+            <section class="metoda">
+                <div class="metoda__content">
+                    <div class="metoda__title">
+                        Une <b>Methode Innovante Et Efficace</b>
+                    </div>
+                    <div class="metoda__subtitle">
+                        Avec les cartographies Velite, nous rehabilitons le reel, l’utile, et pragmatique.
+                    </div>
+                    <p class="metoda__text">
+                        Tout le travail de renseignement que nous realisons est base sur les techniques digitales les
+                        plus
+                        avancees en matiere
+                        de recherche et d’acquisition d’informations. Nos traduisons par ailleurs les conclusions de nos
+                        analyses forme de
+                        cartographies sur-mesure. Elles offrent a nos clients une vue d’ensemble tres claire de la
+                        situation.
+                    </p>
+                </div>
+
+            </section>
+            <section class="animation">
+                <div class="animation-item">
+                    <div class="aninmation-img">
+                        <img src="../img/service/Frame_animation2.svg" alt="">
+                    </div>
+                    <div class="item-context">
+                        <div class="item-title">Des informations a forte valeur ajoutee</div>
+                        <p class="animation-text">Nos techniques d’investigations reposent sur l’exploitation de sources
+                            ouvertes, au travers de methodes de pointe en
+                            matiere d’open source intelligence (OSINT).</p>
+                    </div>
+                </div>
+                <div class="animation-item">
+                    <div class="aninmation-img">
+                        <img src="../img/service/Frame_animation.svg" alt="">
+                    </div>
+                    <div class="item-context">
+                        <div class="item-title">Des analyses centrees sur la question de notre client</div>
+                        <p class="animation-text">
+                            Nous realisons pour nos clients un travail approfondi de recoupement, d’analyse et de
+                            synthese
+                            de ces informations pour
+                            apporter des reponses claires a leurs questions.
+                        </p>
+                    </div>
+                </div>
+                <div class="animation-item">
+                    <div class="aninmation-img">
+                        <img src="../img/service/Frame_animation3.svg" alt="">
+                    </div>
+                    <div class="item-context">
+                        <div class="item-title">
+                            Des livrables clairs et fiables
+                        </div>
+                        <p class="animation-text">
+                            Nous produisons des livrables fondes sur des informations factuelles et verifiables plutot
+                            que
+                            sur des impressions ou
+                            des prejuges.
+                        </p>
+                    </div>
+                </div>
+                <div class="animation-item">
+                    <div class="aninmation-img">
+                        <img src="../img/service/Frame_animation4.svg" alt="">
+                    </div>
+                    <div class="item-context">
+                        <div class="item-title">
+                            Un atout majeur: la cartographie
+                        </div>
+                        <p class="animation-text">
+                            Les cartographies realisees par Velite sont devenues un support redoutable pour se doter
+                            d’un avantage competetif
+                            decisif dans la conquete d’un marche. Elles sont l’outil ideal pour se mettre autour d’une
+                            table et elaborer
+                            ensemble un
+                            “plan de bataille”.
+                        </p>
+                    </div>
+                </div>
+
+            </section>
+
+            <section class="video">
+            </section>
+            <section class="button">
+                <button class="btn btn__common">
+                    Découvrez notre équipe
+                    <img src="../img/service/Vector__arrow.svg"></img>
+                </button>
+            </section>
+
+            <section class="contascts">
+                <div class="contact-content">
+                    <div class="contacts__title">
+                        <p>Nous&nbsp;<b>contacter</b></p>
+                    </div>
+                    <div class="contacts-info">
+                        <div class="contact-item">
+                            <div><b>Phone:</b></div>
+                            <div>+41 22 552 46 52</div>
+                        </div>
+                        <div class="contact-item">
+                            <div><b>Email:</b></div>
+                            <div>contact@geneva-intelligence.ch</div>
+                        </div>
+                        <div class="contact-item">
+                            <div><b>Address:</b> </div>
+                            <div>Case postale 75, 1211 Genève 12</div>
+                        </div>
+                    </div>
                 </div>
                 <div class="contact-form">
-                    <div class="contact-form__context">
-                        <form action="#" method="post">
-                            <label for="name"></label>
-                            <input type="email" placeholder="Name" id="name" name="user_mail">
-                            <label for="mail"></label>
-                            <input type="email" placeholder="Email 
-                                
-                                ar.yarmoshuk@gmail.com" id="mail" name="user_mail">
-                            <label for="mail"></label>
-                            <input type="email" placeholder="Sujet" id="mail" name="user_mail">
-                            <label for="msg"></label>
-                            <textarea id="msg" placeholder="Message" name="user_message"></textarea>
-                            <button class="contact-form__btn">
-                                Soumettre
-                                <div></div>
-                            </button>
-                        </form>
-                    </div>
+                    <form action="#" method="post">
+                        <input type="text" placeholder="Name" class="name" required>
+                        <input type="email" placeholder="Email" class="mail" required
+                            pattern="^([a-z0-9_-]+\.)*[a-z0-9_-]+@[a-z0-9_-]+(\.[a-z0-9_-]+)*\.[a-z]{2,6}$">
+                        <input class="text" placeholder="Sujet" class="theme" required>
+                        <textarea id="msg" placeholder="Message" required="required"></textarea>
+                        <button type="submit" class="btn">
+                            Soumettre
+                            <img src="../img/contacts/Frame 259.svg"></img>
+                        </button>
+                    </form>
                 </div>
-                <div class="contacts__info">
-                    <div class="contacts__item">
-                        <span>Phone:</span>
-                        <span>+41 22 552 46 52</span>
-                    </div>
-                    <div class="contacts__item">
-                        <span>Email:</span>
-                        <span>contact@geneva-intelligence.ch</span>
-                    </div>
-                    <div class="contacts__item">
-                        <span>Address:</span>
-                        <span>Case postale 75, 1211 Genève 12</span>
-                    </div>
-                </div>
-            </section> 
+            </section>
         </main>
-
-        <footer class="footer">
-            <div class="footer-social-links">
-                <img src="../img/Social-i.svg" alt="Instagram">
-                <img src="../img/Social-tw.svg" alt="Twitter">
-                <img src="../img/Social-f.svg" alt="Meta">
-                <img src="../img/Social-in.svg" alt="LinkedIn">
+        <footer>
+            <div class="social-links">
+                <a href="" class="social-link" aria-label="Instagram"><img src="../img/Social-i.svg" alt="Instagram"
+                        class="social-img"></a>
+                <a href="" class="social-link" aria-label="Twitter"><img src="../img/Social-tw.svg" alt="Twitter"
+                        class="social-img"></a>
+                <a href="" class="social-link" aria-label="Meta"><img src="../img/Social-f.svg" alt="Meta"
+                        class="social-img"></a>
+                <a href="" class="social-link" aria-label="LinkedIn"><img src="../img/Social-in.svg" alt="LinkedIn"
+                        class="social-img"></a>
             </div>
-            <div class="footer-text">
+            <div class="footer__text">
                 <p>2021© Geneva Intelligence. All rights reserved.</p>
             </div>
         </footer>

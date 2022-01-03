@@ -5,30 +5,68 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./style/styles.css">
     <link rel="stylesheet" type="text/css" href="./style/home.css">
 
     <title>Home Page</title>
 </head>
 
 <body>
-    <div class="wrapper">
+    <div class="main-grid">
         <header>
-            <div class="header">
-                <div class="logo"></div>
-                <div class="context">
-                    <nav class="navigation">
-                        <a href="http://">Services & Méthodologie</a>
-                        <a href="http://">Blog</a>
+            <div class="logo-wrapper">
+                <div class="container" onclick="burger(this)">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                    <div class="sidebar">
+                        <nav class="nav">
+                            <a href="./pages/services.html" class="nav__link">Services & Méthodologie</a>
+                            <a href="./pages/blog.html" class="nav__link active">Blog</a>
+                        </nav>
+                        <div class="social-links">
+                            <a href="" class="social-link" aria-label="Instagram"><img src="./img/Social-i.svg"
+                                    alt="Instagram" class="social-img"></a>
+                            <a href="" class="social-link" aria-label="Twitter"><img src="./img/Social-tw.svg"
+                                    alt="Twitter" class="social-img"></a>
+                            <a href="" class="social-link" aria-label="Meta"><img src="./img/Social-f.svg" alt="Meta"
+                                    class="social-img"></a>
+                            <a href="" class="social-link" aria-label="LinkedIn"><img src="./img/Social-in.svg"
+                                    alt="LinkedIn" class="social-img"></a>
+                        </div>
+                    </div>
+                </div>
+    
+                <script>
+                    function burger(container, sidebar) {
+                        container.classList.toggle("change");
+                        sidebar.classList.toggle("change");
+                    }
+                </script>
+                <div class="img__wrapper">
+                    <img src="./img/&_logo.png" alt="Geneva Intelligence">
+                </div>
+    
+                <div class="header-wrapper ">
+                    <nav class="nav">
+                        <a href="./pages/services.html" class="nav__link">Services & Méthodologie</a>
+                        <a href="./pages/blog.html" class="nav__link active">Blog</a>
                     </nav>
-                    <div class="social-lincs">
-                        <img src="./img/Social-i.png" alt="Instagram">
-                        <img src="./img/Social-tw.png" alt="Twitter">
-                        <img src="./img/Social-f.png" alt="Meta">
-                        <img src="./img/Social-in.png" alt="LinkedIn">
+                    <div class="social-links">
+                        <a href="" class="social-link" aria-label="Instagram"><img src="./img/Social-i.png" alt="Instagram"
+                                class="social-img"></a>
+                        <a href="" class="social-link" aria-label="Twitter"><img src="./img/Social-tw.png" alt="Twitter"
+                                class="social-img"></a>
+                        <a href="" class="social-link" aria-label="Meta"><img src="./img/Social-f.png" alt="Meta"
+                                class="social-img"></a>
+                        <a href="" class="social-link" aria-label="LinkedIn"><img src="./img/Social-in.png" alt="LinkedIn"
+                                class="social-img"></a>
                     </div>
                 </div>
             </div>
+    
         </header>
+        <hr>
         <main>
             <section class="hero">
                 <div>
@@ -253,61 +291,56 @@
                     </button>
                 </div>
             </section>
-            <section class="contacts">
-                <div class="title contacts__title">
-                    <p>Nous<b> contacter</b></p>
+            <section class="contascts">
+                <div class="contact-content">
+                    <div class="contacts__title">
+                        <p>Nous&nbsp;<b>contacter</b></p>
+                    </div>
+                    <div class="contacts-info">
+                        <div class="contact-item">
+                            <div><b>Phone:</b></div>
+                            <div>+41 22 552 46 52</div>
+                        </div>
+                        <div class="contact-item">
+                            <div><b>Email:</b></div>
+                            <div>contact@geneva-intelligence.ch</div>
+                        </div>
+                        <div class="contact-item">
+                            <div><b>Address:</b> </div>
+                            <div>Case postale 75, 1211 Genève 12</div>
+                        </div>
+                    </div>
                 </div>
                 <div class="contact-form">
-                    <div class="contact-form__context">
-                        <form action="#" method="post">
-                            <label for="name"></label>
-                            <input type="email" placeholder="Name" id="name" name="user_mail">
-                            <label for="mail"></label>
-                            <input type="email" placeholder="Email 
-                            
-                            ar.yarmoshuk@gmail.com" id="mail" name="user_mail">
-                            <label for="mail"></label>
-                            <input type="email" placeholder="Sujet" id="mail" name="user_mail">
-                            <label for="msg"></label>
-                            <textarea id="msg" placeholder="Message" name="user_message"></textarea>
-
-                            <button class="contact-form__btn">
-                                Soumettre
-                                <div></div>
-                            </button>
-
-                        </form>
-                    </div>
-
-                </div>
-                <div class="contacts__info">
-                    <div class="contacts__item">
-                        <span>Phone:</span>
-                        <span>+41 22 552 46 52</span>
-                    </div>
-                    <div class="contacts__item">
-                        <span>Email:</span>
-                        <span>contact@geneva-intelligence.ch</span>
-                    </div>
-                    <div class="contacts__item">
-                        <span>Address:</span>
-                        <span>Case postale 75, 1211 Genève 12</span>
-                    </div>
+                    <form action="#" method="post">
+                        <input type="text" placeholder="Name" class="name" required>
+                        <input type="email" placeholder="Email" class="mail" required
+                            pattern="^([a-z0-9_-]+\.)*[a-z0-9_-]+@[a-z0-9_-]+(\.[a-z0-9_-]+)*\.[a-z]{2,6}$">
+                        <input class="text" placeholder="Sujet" class="theme" required>
+                        <textarea id="msg" placeholder="Message" required="required"></textarea>
+                        <button type="submit" class="btn">
+                            Soumettre
+                            <img src="../img/contacts/Frame 259.svg"></img>
+                        </button>
+                    </form>
                 </div>
             </section>
-        </main>
-        <footer>
-            <div class="footer-social-links">
-                <img src="./img/Social-i.svg" alt="Instagram">
-                <img src="./img/Social-tw.svg" alt="Twitter">
-                <img src="./img/Social-f.svg" alt="Meta">
-                <img src="./img/Social-in.svg" alt="LinkedIn">
+            </main>
+            <footer>
+                <div class="social-links">
+                    <a href="" class="social-link" aria-label="Instagram"><img src="./img/Social-i.svg" alt="Instagram"
+                            class="social-img"></a>
+                    <a href="" class="social-link" aria-label="Twitter"><img src="./img/Social-tw.svg" alt="Twitter"
+                            class="social-img"></a>
+                    <a href="" class="social-link" aria-label="Meta"><img src="./img/Social-f.svg" alt="Meta"
+                            class="social-img"></a>
+                    <a href="" class="social-link" aria-label="LinkedIn"><img src="./img/Social-in.svg" alt="LinkedIn"
+                            class="social-img"></a>
+                </div>
+                <div class="footer__text">
+                    <p>2021© Geneva Intelligence. All rights reserved.</p>
+                </div>
+            </footer>
             </div>
-            <div class="footer-text">
-                <p>2021© Geneva Intelligence. All rights reserved.</p>
-            </div>
-        </footer>
-    </div>
-</body>
 
 </html>

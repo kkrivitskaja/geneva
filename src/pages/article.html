@@ -18,16 +18,33 @@
                     <div class="bar1"></div>
                     <div class="bar2"></div>
                     <div class="bar3"></div>
+                    <div class="sidebar">
+                        <nav class="nav">
+                            <a href="../pages/services.html" class="nav__link">Services & Méthodologie</a>
+                            <a href="../pages/blog.html" class="nav__link active">Blog</a>
+                        </nav>
+                    <div class="social-links">
+                        <a href="" class="social-link" aria-label="Instagram"><img src="../img/Social-i.svg" alt="Instagram"
+                                class="social-img"></a>
+                        <a href="" class="social-link" aria-label="Twitter"><img src="../img/Social-tw.svg" alt="Twitter"
+                                class="social-img"></a>
+                        <a href="" class="social-link" aria-label="Meta"><img src="../img/Social-f.svg" alt="Meta" class="social-img"></a>
+                        <a href="" class="social-link" aria-label="LinkedIn"><img src="../img/Social-in.svg" alt="LinkedIn"
+                                class="social-img"></a>
+                    </div>
+                    </div>
                 </div>
+
+                
                 <script>
-                    function burger(x) {
-                        x.classList.toggle("change");
+                    function burger(container, sidebar) {
+                        container.classList.toggle("change");
+                       sidebar.classList.toggle("change");
                     }
                 </script>
                 <div class="img__wrapper">
                     <img src="../img/&_logo.png" alt="Geneva Intelligence">
                 </div>
-
 
                 <div class="header-wrapper ">
                     <nav class="nav">
@@ -46,7 +63,6 @@
                     </div>
                 </div>
             </div>
-
 
         </header>
         <hr>
@@ -79,7 +95,6 @@
                     colossal pour les biens et
                     services suisses de même qu’une source d’investissements.
                 </p>
-
                 <p class="article__text"></p>
                 <p class="article__text">
                     Ces bonnes relations, renforcées par un <a href="" class="color"> accord de libre-échange en
@@ -166,7 +181,6 @@
                     Retrouvez la totalité de l’article « Les relations sino-suisses : Economie contre Influence » de
                     Jocerand Duthoit <a href="#" class="color">ici</a>.
                 </p>
-
                 <img class="video" src="../img/article/&_video.jpg" alt="YouTube video">
             </section>
 
@@ -178,8 +192,8 @@
                         <p class="download__subtitle"> Les relations sino-suisses: Économie contre Influence.pdf</p>
                     </div>
                 </a>
-
             </section>
+
             <section class="contascts">
                 <div class="contact-content">
                     <div class="contacts__title">
