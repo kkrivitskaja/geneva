@@ -10,7 +10,6 @@
     background-size: 100%
 }
 
-
 .hero__title {
     font-family: var(--clr-fontfamily-secondary);
     font-style: normal;
@@ -144,7 +143,6 @@
     display: block;
 }
 
-
 .carousel {
     width: 100%;
     margin: 0 auto;
@@ -156,13 +154,11 @@
     overflow: hidden;
 }
 
-
 .bullets {
     width: 88px;
     display: flex;
     justify-content: space-between;
     margin: 32px auto;
-
 }
 
 .bullets label {
@@ -296,7 +292,6 @@
     font-weight: normal;
 }
 
-
 .metodology {
     margin-top: 24px;
     background-color: var(--clr-bg-gray);
@@ -407,7 +402,7 @@
     opacity: 0.3;
 }
 
-.aninmation-img:hover{
+.aninmation-img:hover {
     opacity: 1;
 }
 
@@ -480,7 +475,7 @@
 .btn__common:hover,
 .btn__common:active {
     color: var(--clr-bg-primary);
-    background-color: var(--clr-bg-light);
+    border: 1px solid var(--clr-bg-primary);
     cursor: pointer;
 }
 
@@ -488,6 +483,12 @@
     margin-right: auto;
     padding-right: 24px;
     padding-left: 23px;
+    filter: invert(0%) sepia(13%) saturate(777%) hue-rotate(326deg) brightness(94%) contrast(86%);
+}
+
+/*chanding svg icon color on hover*/
+.btn__common:hover img {
+    filter: invert(12%) sepia(55%) saturate(6136%) hue-rotate(199deg) brightness(97%) contrast(103%);
 }
 
 @media (min-width: 800px) {
@@ -503,7 +504,6 @@
         text-align: center;
     }
 
-
     .info {
         width: 67%;
         margin: 72px auto;
@@ -517,6 +517,10 @@
         margin-top: 48px;
     }
 
+    .quote {
+        margin-top: 144px;
+    }
+
     .quote,
     .metodology {
         width: 85%;
@@ -526,20 +530,17 @@
 
     .quote::after,
     .metodology::after {
-        content: "";
-        position: absolute;
-        background: var(--clr-bg-secondary);
+
         height: 70px;
         width: min(32%, 400px);
         right: 0;
         top: 113px;
-        z-index: 1;
     }
 
     .tabmenu {
         width: 85%;
-        margin-top: 124px;
-
+        margin-top: 35px;
+        height: 210px;
     }
 
     .tab__item-first,
@@ -549,17 +550,19 @@
     }
 
     .tab__item-first {
-        width: min(16.8%, 242px);
+        width: min(20%, 242px);
+        margin-left: 5%;
+        display: flex;
     }
 
     .tab__item-second {
-        width: min(16.8%, 243px);
+        width: 243px;
     }
 
     .tab__item-third {
-        width: min(6%, 124px);
+        width: min(10%, 124px);
+        margin-right: 10%;
     }
-
 
     .tabmenu img {
         display: block;
@@ -580,44 +583,177 @@
         -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     }
 
-
-
-
-
-
     .bullet-dots {
         display: none;
     }
 
-    /* .metoda {
-        margin-top: 107px;
+    .slides {
+        width: 85%;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+
+    .slide-title {
+
+        font-size: 36px;
+        align-items: flex-end;
+        margin: 15px 0 32px 24.5%;
+        position: relative;
+    }
+
+    .slide-img {
+        height: 453px;
+        width: 27%;
+        margin-left: auto;
+        z-index: 10;
+        position: relative;
+        float: left;
+    }
+
+    .slides-container .slide:first-child .slide-img::before {
+        width: 0;
+    }
+
+    .slider-text p {
+        font-size: 28px;
+    }
+
+    .slider-text {
+        font-family: var(--clr-fontfamily-secondary);
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 150%;
+        margin-top: 32px;
+    }
+
+    .metodology {
+        margin-top: 82px;
+        height: 148px;
+    }
+
+    .metodology::after {
+        height: 0;
+    }
+
+    .metoda {
+        margin-top: 72px;
         height: 480px;
     }
 
+    .metoda__content {
+        height: 401px;
+        width: 90%;
+        text-align: center;
+        font-family: var(--clr-bg-secondary);
+        font-style: normal;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
     .metoda__title {
-        width: 71%;
-        font-weight: 200;
-        font-size: 24px;
-        letter-spacing: -1px;
-        text-transform: capitalize;
-        margin: 0 auto;
+        font-size: 36px;
+        margin-top: 30px;
     }
 
     .metoda__subtitle {
-        width: 90%;
-        margin: 16px;
-        font-weight: normal;
-        font-size: 18px;
-        margin: 0 auto;
+        font-size: 28px;
+        height: 42px;
     }
 
     .metoda__text {
-        width: 90%;
+        font-size: 24px;
+        width: 80%;
+        margin-bottom: 42px;
+        height: 144px;
+    }
+
+    .animation {
+        width: 85%;
+        height: 632px;
+        margin: auto;
+        margin-top: 40px;
+        display: flex;
+        flex-direction: row;
+        gap: 24px;
+        column-count: 2;
+        -webkit-column-count: 2;
+        -moz-column-count: 2;
+        flex-wrap: wrap;
+    }
+
+    .animation-item {
+        width: 600px;
+        height: 332px;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .animation .animation-item:nth-child(1) {
+        height: 324px;
+    }
+
+    .animation .animation-item:nth-child(3) {
+        height: 297px;
+    }
+
+    .animation .animation-item:nth-child(3),
+    .animation .animation-item:nth-child(4) {
+        margin-top: 0;
+    }
+
+    .aninmation-img {
+        margin: 50px 0 0 32px;
+    }
+
+    .item-context {
+        display: flex;
+        height: 158px;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-top: 16px;
+    }
+
+    .item-context .item-title {
+        font-family: var(--clr-fontfamily-primary);
+        font-style: normal;
         font-weight: 300;
-        font-size: 16px;
-        margin: 0 auto;
-    } */
+        font-size: 32px;
+        line-height: 150%;
+        letter-spacing: -1px;
+        margin-top: 50px;
+        margin-left: 40px;
+    }
 
+    .item-context .animation-text {
+        font-family: var(--clr-fontfamily-primary);
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 150%;
+        letter-spacing: -0.25px;
+        margin-left: 40px;
+    }
 
+    .video {
+        width: 85%;
+        margin: 150px auto;
+        height: 672px;
+        display: flex;
+        background-image: url(../img/service/&_video_desc.png);
+        background-repeat: no-repeat;
+        background-size: 100%
+    }
+
+    .button {
+        width: 90%;
+        height: 72px;
+        display: flex;
+        justify-content: center;
+        margin-top: -70px;
+        margin-bottom: 70px;
+    }
 
 }
