@@ -36,7 +36,7 @@
     font-family: var(--clr-fontfamily-secondary);
     font-style: normal;
     font-weight: bold;
-    font-size: clamp(1.2em, 3.6vw, 2.6em);
+     
     letter-spacing: -1.7px;
     line-height: 150%;
 }
