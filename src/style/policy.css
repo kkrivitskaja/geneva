@@ -2,16 +2,10 @@
      margin-top: 32px;
  }
 
-
  .policity {
      width: 90%;
      margin: 0 auto;
  }
-
-
- /* .policy__context {
-     margin-top: 32px;
- } */
 
  .policy__title {
      font-family: var(--clr-fontfamily-secondary);
@@ -57,7 +51,6 @@
      line-height: 150%;
  }
 
-
  @media (min-width: 800px) {
      main {
          margin-top: 48px;
@@ -69,4 +62,4 @@
          margin: 0 auto;
      }
 
-     }
+ }
